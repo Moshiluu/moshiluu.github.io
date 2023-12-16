@@ -23,7 +23,7 @@
                     <a href="#about" class="navbar__links" id="about-page">About Me</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#past" class="navbar__links" id="past-page">Past Projects</a>
+                    <a href="#past" class="navbar__links" id="past-page">Completed Projects</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#current" class="navbar__links" id="current-page">Current Projects</a>
@@ -37,54 +37,47 @@
  <div class="about" id="about">
     <div class="about__container">
         <div class="about__img--container">
-            <div class="about__img--card">ICON</div>
+            <div class="about__img--card"><img src="Photos/Ethan.png" alt="Photo of me"></div>
         </div>
         <div class="about__content">
             <h1 class="about__title">Hello.</h1>
-            <p class="about__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia possimus delectus recusandae porro sed, vero voluptates quisquam eius iste autem nisi necessitatibus, aliquid qui praesentium. Nulla suscipit eius maxime fugit.</p>
+            <p class="about__para">I'm Ethan Luu, a passionate and innovative game designer with a love for creating immersive and memorable gaming experiences. </p>
         </div>
     </div>
  </div>
- <div class="past" id="past">
+ <div class="past" id="past" style="width: 100%;">
     <h1>Completed Projects</h1>
-        <div class="wrap">  
-         <div class="arrow" id="arrow-left"></div>
-         <div class="slider" id ="slider">
+         <div class="slideshow-container" style="width: 100%;">
              <div class="past__slideshow" id="past-slideshow">
-                    <div class="past__card slide1">
+                    <div class="mySlides fade" style="width: 100%">
                         <div class="slide__image">
                             <img src="https://placehold.co/600x400" alt="placeholder">
                         </div>
-                        <div class="slide__content">
-                            <h2>Project 1</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt obcaecati dignissimos tenetur esse, repellendus totam quo nemo dolor pariatur repellat est nihil aperiam laudantium corrupti! Sapiente rem accusamus assumenda.</p>
+                        <div class="slide__content text">
+                            <h2>Planet Defender</h2>
+                            <p> Planet Defender was my first ever project using Unity. This was an introductory project to an online course that I am taking called GameDevRocket. It is a short, but sweet game with a simple premise: protect your planet from incoming asteriods.</p>
                             <div class="past__btn"><button>Learn More</button></div>
                         </div>
                     </div>
-                    <div class="past__card slide2">
+                    <div class="mySlides fade"style="width: 100%">
                         <div class="slide__image">
                             <img src="https://placehold.co/600x400" alt="placeholder">
                         </div>
-                        <div class="slide__content">
-                            <h2>Project 2</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt obcaecati dignissimos tenetur esse, repellendus totam quo nemo dolor pariatur repellat est nihil aperiam laudantium corrupti! Sapiente rem accusamus assumenda.</p>
-                            <div class="past__btn"><button>Learn More</button></div>
-                        </div>
-                    </div>
-                    <div class="past__card slide3">
-                        <div class="slide__image">
-                            <img src="https://placehold.co/600x400" alt="placeholder">
-                        </div>
-                        <div class="slide__content">
-                            <h2>Project 3</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt obcaecati dignissimos tenetur esse, repellendus totam quo nemo dolor pariatur repellat est nihil aperiam laudantium corrupti! Sapiente rem accusamus assumenda.</p>
+                        <div class="slide__content text">
+                            <h2>Climb to Riches</h2>
+                            <p> Climb to Riches is the second game in the GameDevRocket course. In this game, you work up from almost nothing. You build houses that generate you income in hopes that one day, you can build the house of your dreams.</p>
                             <div class="past__btn"><button>Learn More</button></div>
                         </div>
                     </div>
                 </div>
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
          </div> 
-         <div class="arrow" id="arrow-right"></div>
-     </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
  </div>
 
  <div class="current" id="current">
@@ -92,28 +85,79 @@
         <div class="curr__projects">
             <div class="curr__pannel one">
                 <div class="pannel__image">
-                    <img src="https://placehold.co/600x400" alt="placeholder">
+                    <img src="https://gamedevclub.tech/melonjam/images/Winter%20MelonJam%202023/logos/2023wmjdate.png" alt="MelonJam Icon">
                 </div>
                 <div class="pannel__content">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt obcaecati dignissimos tenetur esse, repellendus totam quo nemo dolor pariatur repellat est nihil aperiam laudantium corrupti! Sapiente rem accusamus assumenda.</p>
-                    <div class="curr__btn"><button>Learn More</button></div>
+                    <h2>Winter MelonJam!</h2>
+                    <p>The MelonJam is a game jam (a timed game creation competiton) that will test my skills as the main programmer for my team. We will have 72 hours to produce a game based on the given prompt. This will test not only my programming skills, but also show off my communication and teamwork ability. The MelonJam runs from December 28th, 2023 to Demeber 30th, 2023.  </p>
+                    <div class="curr__btn"><a href="https://gamedevclub.tech/melonjam/#about" target="_blank"><button>Learn More</button></a></div>
                 </div>
             </div>
             <div class="curr__pannel two">
                 <div class="pannel__image">
-                    <img src="https://placehold.co/600x400" alt="placeholder">
+                    <img src="https://globalgamejam.org/themes/custom/ggj_v4/logo.svg" alt="Global Game Jam Icon">
                 </div>
                 <div class="pannel__content">
-                    <h2>Project 2</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt obcaecati dignissimos tenetur esse, repellendus totam quo nemo dolor pariatur repellat est nihil aperiam laudantium corrupti! Sapiente rem accusamus assumenda.</p>
-                    <div class="curr__btn"><button>Learn More</button></div>
+                    <h2>Global Game Jam!</h2>
+                    <p>The Global Game Jam is a game jam (a timed game creation competition) hosted from all over the world. On the local level, certain places will host a game jam site which allows people like me to get together and create a game for the competition! The Global Game Jam will be a week long event running from January 22th, 2024 to January 28, 2024.</p>
+                    <div class="curr__btn"><a href="https://globalgamejam.org/news" target="_blank"><button>Learn More</button></a></div>
                 </div>
             </div>
         </div>
  </div>
-   
+   <div class="contact" id="contact">
+        <div class="contact__container">
+            <h1>Contact Me</h1>
+            <p>Please feel free to reach out if you have any questions or inqueries!</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your message</h3>
+                    <form id="contact-form" method="post" action="app.php">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                 <input type="text" placeholder="Enter Name" name="name">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                 <input type="text" placeholder="Enter Phone Number" name="phone">
+                            </div>
+
+                        </div>                         
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                 <input type="text" placeholder="Enter Email" name="email">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                 <input type="text" placeholder="Enter Subject" name="subject">
+                             </div>
+                            </div>
+
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Write your message" name="message"></textarea>
+                            <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach out to me!</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>ethanluu0405@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+1 703 635 0010</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+   </div>
     <script src='app.js'></script>
+    <script src="app.php"></script>
    
 </body>
 </html>
