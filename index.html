@@ -41,37 +41,38 @@
         </div>
         <div class="about__content">
             <h1 class="about__title">Hello.</h1>
-            <p class="about__para">I'm Ethan Luu, a passionate and innovative game designer with a love for creating immersive and memorable gaming experiences. </p>
+            <p class="about__para">I'm Ethan Luu, a passionate and innovative game designer who is currently studying Computer Game Design at George Mason University with a love for creating immersive and memorable gaming experiences. </p>
         </div>
     </div>
  </div>
+ <br>
  <div class="past" id="past" style="width: 100%;">
     <h1>Completed Projects</h1>
          <div class="slideshow-container" style="width: 100%;">
              <div class="past__slideshow" id="past-slideshow">
                     <div class="mySlides fade" style="width: 100%">
                         <div class="slide__image">
-                            <img src="https://placehold.co/600x400" alt="placeholder">
+                            <img src="photos/PlanetDefender.png" alt="Planet Defender Cover Image">
                         </div>
                         <div class="slide__content text">
                             <h2>Planet Defender</h2>
                             <p> Planet Defender was my first ever project using Unity. This was an introductory project to an online course that I am taking called GameDevRocket. It is a short, but sweet game with a simple premise: protect your planet from incoming asteriods.</p>
-                            <div class="past__btn"><button>Learn More</button></div>
+                            <div class="past__btn"><a href="https://moshiluu.itch.io/planet-defender" target="_blank"><button>Learn More</button></a></div>
                         </div>
                     </div>
                     <div class="mySlides fade"style="width: 100%">
                         <div class="slide__image">
-                            <img src="https://placehold.co/600x400" alt="placeholder">
+                            <img src="photos/ClimbToRiches.png" alt="Climb To Riches Cover Image">
                         </div>
                         <div class="slide__content text">
                             <h2>Climb to Riches</h2>
                             <p> Climb to Riches is the second game in the GameDevRocket course. In this game, you work up from almost nothing. You build houses that generate you income in hopes that one day, you can build the house of your dreams.</p>
-                            <div class="past__btn"><button>Learn More</button></div>
+                            <div class="past__btn"><a href="https://moshiluu.itch.io/climb-to-riches" target="_blank"><button>Learn More</button></a></div>
                         </div>
                     </div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)"></a>
-                <a class="next" onclick="plusSlides(1)"></a>
+                <a class="prev" onclick="plusSlides(-1)"><p>⬅</p></a>
+                <a class="next" onclick="plusSlides(1)"><p>➡</p></a>
          </div> 
          <br>
          <div style="text-align:center">
@@ -79,17 +80,16 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             </div>
  </div>
-
  <div class="current" id="current">
     <h1>Current Projects</h1>
         <div class="curr__projects">
             <div class="curr__pannel one">
                 <div class="pannel__image">
-                    <img src="https://gamedevclub.tech/melonjam/images/Winter%20MelonJam%202023/logos/2023wmjdate.png" alt="MelonJam Icon">
+                    <img src="https://img.itch.zone/aW1nLzE0NDQ2NjYyLnBuZw==/508x254%23mb/Yydwdj.png" alt="Boss Rush Game Jam Icon">
                 </div>
                 <div class="pannel__content">
-                    <h2>Winter MelonJam!</h2>
-                    <p>The MelonJam is a game jam (a timed game creation competiton) that will test my skills as the main programmer for my team. We will have 72 hours to produce a game based on the given prompt. This will test not only my programming skills, but also show off my communication and teamwork ability. The MelonJam runs from December 28th, 2023 to Demeber 30th, 2023.  </p>
+                    <h2>Boss Rush Jam!</h2>
+                    <p>The Boss Rush Jam is a game jam (a timed game creation competiton) that will test my skills as the main programmer for my team. We will have one month to produce a game based on the given prompt. This will test not only my programming skills, but also show off my communication and teamwork ability. The BRJ runs from January 5, 2024 to February 5, 2024.  </p>
                     <div class="curr__btn"><a href="https://gamedevclub.tech/melonjam/#about" target="_blank"><button>Learn More</button></a></div>
                 </div>
             </div>
@@ -105,59 +105,6 @@
             </div>
         </div>
  </div>
-   <div class="contact" id="contact">
-        <div class="contact__container">
-            <h1>Contact Me</h1>
-            <p>Please feel free to reach out if you have any questions or inqueries!</p>
-            <div class="contact-box">
-                <div class="contact-left">
-                    <h3>Send your message</h3>
-                    <form id="contact-form" method="post" action="app.php">
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Name</label>
-                                 <input type="text" placeholder="Enter Name" name="name">
-                            </div>
-                            <div class="input-group">
-                                <label>Phone</label>
-                                 <input type="text" placeholder="Enter Phone Number" name="phone">
-                            </div>
-
-                        </div>                         
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Email</label>
-                                 <input type="text" placeholder="Enter Email" name="email">
-                            </div>
-                            <div class="input-group">
-                                <label>Subject</label>
-                                 <input type="text" placeholder="Enter Subject" name="subject">
-                             </div>
-                            </div>
-
-                            <label>Message</label>
-                            <textarea rows="5" placeholder="Write your message" name="message"></textarea>
-                            <button type="submit">SEND</button>
-                    </form>
-                </div>
-                <div class="contact-right">
-                    <h3>Reach out to me!</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>ethanluu0405@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+1 703 635 0010</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-   </div>
     <script src='app.js'></script>
-    <script src="app.php"></script>
-   
 </body>
 </html>
